@@ -1,0 +1,322 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Needed for dropdown positioning */
+    z-index: 10;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.player-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-name {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+
+.player-name:focus {
+    border-bottom-color: #ffd700;
+}
+
+.score {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00bfff;
+}
+
+.dropdown-menu-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#dropdown-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #000080;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#dropdown-btn:hover {
+    background-color: #0000b3;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1a1a1a;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+    border: 2px solid #ffd700;
+    border-radius: 5px;
+    margin-top: 5px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s, opacity 0.3s;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.dropdown-content a.active {
+    background-color: #00bfff;
+    font-weight: bold;
+}
+
+.dropdown-content a.active:hover {
+    background-color: #00bfff;
+}
+
+.dropdown-content a.clickable {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.dropdown-content a.clickable:hover {
+    background-color: #333;
+}
+
+.jeopardy-board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.category-title {
+    background-color: #000080;
+    border: 2px solid #fff;
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.clue-card {
+    background-color: #000080;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 150px;
+}
+
+.clue-card:hover {
+    background-color: #0000b3;
+    transform: scale(1.05);
+}
+
+.clue-card.disabled {
+    background-color: #333;
+    cursor: not-allowed;
+    color: #666;
+    pointer-events: none;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    margin: 10% auto;
+    padding: 30px;
+    border: 5px solid #ffd700;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+}
+
+.close-button {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#clue-content {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reveal-answer-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #008000;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#reveal-answer-btn:hover {
+    background-color: #00b300;
+}
+
+#answer-key {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.scoring-controls {
+    margin-top: 30px;
+    border-top: 2px solid #333;
+    padding-top: 20px;
+}
+
+.scoring-controls p {
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+}
+
+.scoring-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.correct-btn, .incorrect-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.correct-btn {
+    background-color: #28a745;
+}
+
+.correct-btn:hover {
+    background-color: #218838;
+}
+
+.incorrect-btn {
+    background-color: #dc3545;
+}
+
+.incorrect-btn:hover {
+    background-color: #c82333;
+}
+
+.subtract-text {
+    margin-top: 20px !important;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dropdown-content {
+        min-width: 100%;
+    }
+    .jeopardy-board {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 0 10px;
+    }
+    .clue-card, .category-title {
+        height: 120px;
+        font-size: 1.5rem;
+    }
+    .modal-content {
+        width: 90%;
+        margin: 5% auto;
+    }
+    #clue-content {
+        font-size: 1.2rem;
+    }
+    .scoring-buttons {
+        flex-direction: column;
+    }
+}
