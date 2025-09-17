@@ -112,46 +112,76 @@ const gameData = {
     },
     "mod 3": {
         "Wireless & Cellular Data": [
-            { clue: "This Wi-Fi frequency band offers the longest range but is more prone to interference.", answer: "What is 2.4 GHz?", points: 100 },
-            { clue: "LTE stands for this and is considered a standard within 4G.", answer: "What is Long-Term Evolution?", points: 200 },
-            { clue: "Wi-Fi 6E introduced this new frequency band to improve speed and reduce congestion.", answer: "What is the 6 GHz band?", points: 300 },
-            { clue: "This upcoming cellular standard is an upgrade to 5G and focuses on efficiency and expanded functionality.", answer: "What is 5G-Advanced?", points: 400 },
-            { clue: "Wi-Fi 7 is expected to reach speeds comparable to this wired networking technology.", answer: "What is Ethernet?", points: 500 }
+            { clue: "This type of network connection is limited to the range of a router and is typically used for internet connectivity.", answer: "What is a Wi-Fi network?", points: 100 },
+            { clue: "This term, which stands for Long-Term Evolution, is a specific standard within the 4G scope.", answer: "What is LTE?", points: 200 },
+            { clue: "What are the three most common radio frequency ranges for Wi-Fi networks?", answer: "What are 2.4 GHz, 5 GHz, and 6 GHz?", points: 300 },
+            { clue: "Which type of connection, Wi-Fi or cellular, typically has lower latency for local access and why?", answer: "What is Wi-Fi, because you are closer to the transmission source?", points: 400 },
+            { clue: "What is a significant benefit of cellular networks over Wi-Fi in terms of mobility?", answer: "What is widespread coverage and seamless roaming?", points: 500 }
         ],
         "Location Services": [
-            { clue: "This U.S. government satellite system is the most common source of mobile location tracking.", answer: "What is GPS (Global Positioning System)?", points: 100 },
-            { clue: "This location method uses nearby Wi-Fi access points and their public IP addresses.", answer: "What is Wi-Fi Positioning System (WPS)?", points: 200 },
-            { clue: "Cellular triangulation requires signals from this many towers to determine position.", answer: "What is three towers?", points: 300 },
-            { clue: "This term refers to setting a digital perimeter on a map and receiving alerts when crossed.", answer: "What is geofencing?", points: 400 },
-            { clue: "One major privacy risk of location services is that apps may collect this for analytics or targeted ads.", answer: "What is location history?", points: 500 }
+            { clue: "This feature on mobile devices allows them to determine their geographic position using GPS, Wi-Fi, and cellular data.", answer: "What are location services?", points: 100 },
+            { clue: "This location method is based on the device's distance from at least three cellular towers.", answer: "What is cellular triangulation?", points: 200 },
+            { clue: "This term refers to setting up a virtual perimeter on a map to be notified when a device crosses it.", answer: "What is geofencing?", points: 300 },
+            { clue: "What are two common applications that rely on location services for functionality?", answer: "What are map applications and ride-sharing/delivery apps?", points: 400 },
+            { clue: "What are two security measures you can take regarding location services on your device?", answer: "What are disabling location services for specific apps and/or using a VPN?", points: 500 }
         ],
         "MDM & BYOD": [
-            { clue: "This acronym refers to the system organizations use to remotely manage and secure mobile devices.", answer: "What is Mobile Device Management?", points: 100 },
-            { clue: "In MDM, the first step where a device is registered and assigned to a user is called this.", answer: "What is enrollment?", points: 200 },
-            { clue: "BYOD stands for this policy, which allows employees to use personal devices for work.", answer: "What is Bring Your Own Device?", points: 300 },
-            { clue: "One major advantage of BYOD is cost savings; one major disadvantage is increased risk of this.", answer: "What is security risk (or data leakage/unauthorized access)?", points: 400 },
-            { clue: "In MDM, administrators can remotely perform this action to erase all data if a device is lost or stolen.", answer: "What is a remote wipe?", points: 500 }
+            { clue: "What does the acronym BYOD stand for?", answer: "What is Bring Your Own Device?", points: 100 },
+            { clue: "This type of service allows an organization's IT administrators to remotely manage, monitor, and secure mobile devices.", answer: "What is Mobile Device Management or MDM?", points: 200 },
+            { clue: "What is a major financial benefit of a BYOD policy for an organization?", answer: "What is reduced cost because the organization does not have to purchase devices?", points: 300 },
+            { clue: "With a corporately-owned device under MDM, what are two security actions an administrator can perform remotely?", answer: "What are remotely locking or wiping the device?", points: 400 },
+            { clue: "In a BYOD environment, what is a security risk regarding data and what is a risk related to malware?", answer: "What are data leakage by storing confidential data on a personal device and malware/phishing attacks from personal email or downloads?", points: 500 }
         ],
-        "Sync & Optimization": [
-            { clue: "Google Drive, iCloud, and OneDrive are examples of this type of synchronization.", answer: "What is cloud synchronization?", points: 100 },
-            { clue: "This type of synchronization can occur when devices are on the same Wi-Fi network or connected via USB.", answer: "What is local synchronization?", points: 200 },
-            { clue: "Restarting your phone periodically helps clear these, which can slow performance over time.", answer: "What are memory leaks?", points: 300 },
-            { clue: "Installing lighter versions of apps is one way to save these two system resources.", answer: "What are storage and memory?", points: 400 },
-            { clue: "When a device is overwhelmed by too many apps or settings, the most drastic optimization step is performing this.", answer: "What is a factory reset?", points: 500 }
+        "Mobile Synchronization": [
+            { clue: "This process ensures that data like contacts, calendars, and emails remain consistent and up-to-date across all of your devices.", answer: "What is synchronization?", points: 100 },
+            { clue: "What are two methods for mobile device synchronization?", answer: "What are cloud services, local networks, or direct connections (like USB)?", points: 200 },
+            { clue: "What is a security consideration when synchronizing sensitive files with cloud services?", answer: "What is ensuring the service offers end-to-end encryption?", points: 300 },
+            { clue: "What should you do before performing a large synchronization operation to prevent data loss?", answer: "What is back up your data?", points: 400 },
+            { clue: "In the event of a sync failure, what are two troubleshooting steps you can take?", answer: "What are checking background data usage is enabled, resetting the configuration, or checking for app updates?", points: 500 }
         ],
-        "Backups & Resets": [
-            { clue: "A factory reset returns a device to this initial configuration state.", answer: "What is out-of-box state?", points: 100 },
-            { clue: "iTunes can be used to perform this type of backup for iPhones.", answer: "What is a computer-based backup?", points: 200 },
-            { clue: "Having more than one backup in more than one location is called this.", answer: "What is redundancy (redundant backups)?", points: 300 },
-            { clue: "Backups should never be stored on this same physical device as the primary data.", answer: "What is the internal drive (or same physical drive)?", points: 400 },
-            { clue: "After a factory reset, you must reapply these to keep the device secure and up to date.", answer: "What are updates and security settings?", points: 500 }
+        "Performance Optimization": [
+            { clue: "What is the primary cause of a mobile device slowing down over time?", answer: "What are application bloat, excessive background processes, or hardware limitations?", points: 100 },
+            { clue: "What is one way to limit background app activity to improve performance and battery life?", answer: "What is turning off features like auto-refresh?", points: 200 },
+            { clue: "Why might a user choose to use a \"lite\" version of an application?", answer: "What is because it consumes fewer resources?", points: 300 },
+            { clue: "What is a simple maintenance action you can perform periodically to clear memory leaks?", answer: "What is restarting your device?", points: 400 },
+            { clue: "What is a built-in tool that Android and iOS offer to help optimize storage?", answer: "What are Files by Google (Android) or Offload Unused Apps (iOS)?", points: 500 }
+        ]
+    },
+    "mod 4": {
+        "Ports & Protocols": [
+            { clue: "This defines the rules for communication between network devices.", answer: "What is a protocol?", points: 100 },
+            { clue: "This number is assigned to a specific service or application to direct data to the correct destination on a device.", answer: "What is a port number?", points: 200 },
+            { clue: "This protocol is considered connection-oriented, ensuring data is delivered in the correct order and without errors.", answer: "What is TCP (Transmission Control Protocol)?", points: 300 },
+            { clue: "This protocol is considered connectionless and is primarily used for speed over reliability, such as in video streaming.", answer: "What is UDP (User Datagram Protocol)?", points: 400 },
+            { clue: "What are the two most important components that facilitate communication between devices in any network?", answer: "What are networking ports and protocols?", points: 500 }
         ],
-        "Security & Threats": [
-            { clue: "This type of attack tries to trick users into giving up credentials through fake emails or websites.", answer: "What is phishing?", points: 100 },
-            { clue: "Connecting to this type of Wi-Fi network can expose your data since it lacks encryption.", answer: "What is an open/unsecured Wi-Fi network?", points: 200 },
-            { clue: "On mobile devices, enabling this adds an extra layer of authentication beyond a PIN or password.", answer: "What is multi-factor authentication?", points: 300 },
-            { clue: "Apple’s App Store security reduces the need for antivirus apps on iPhones by blocking this.", answer: "What is unapproved software/app installations?", points: 400 },
-            { clue: "This type of future encryption leverages the laws of physics and makes eavesdropping theoretically impossible.", answer: "What is quantum encryption?", points: 500 }
+        "Network Devices": [
+            { clue: "This device connects different network segments and uses a routing table to forward data packets to the correct destination.", answer: "What is a router?", points: 100 },
+            { clue: "This device connects multiple devices on the same local network, using their MAC addresses to direct traffic.", answer: "What is a switch?", points: 200 },
+            { clue: "This device allows wireless devices to connect to a wired network.", answer: "What is an access point?", points: 300 },
+            { clue: "In a network, what are two primary functions of a switch?", answer: "What are connecting devices and forwarding traffic?", points: 400 },
+            { clue: "What is the key difference between a switch and a router?", answer: "What is that a switch connects devices on a local network, while a router connects multiple networks?", points: 500 }
+        ],
+        "Addressing & Topologies": [
+            { clue: "What does the acronym IP stand for?", answer: "What is Internet Protocol?", points: 100 },
+            { clue: "What is the primary function of an IP address?", answer: "What is to uniquely identify a device on a network?", points: 200 },
+            { clue: "What is the most common addressing scheme used for devices on the internet?", answer: "What is IPv4?", points: 300 },
+            { clue: "What is the primary benefit of IPv6 over IPv4?", answer: "What is that it has a much larger address space?", points: 400 },
+            { clue: "What type of physical topology has all devices connected to a single central hub?", answer: "What is a star topology?", points: 500 }
+        ],
+        "Firewalls & Subnetting": [
+            { clue: "This is a security device or software that filters incoming and outgoing network traffic based on a set of rules.", answer: "What is a firewall?", points: 100 },
+            { clue: "In a network, what is the primary purpose of a firewall?", answer: "What is to prevent unauthorized access?", points: 200 },
+            { clue: "This term refers to the process of dividing a large network into smaller, more manageable sub-networks.", answer: "What is subnetting?", points: 300 },
+            { clue: "What are two benefits of using subnetting in a large network?", answer: "What are improved performance and increased security?", points: 400 },
+            { clue: "If a company wants to separate its guest Wi-Fi from its corporate network, which two networking concepts would be applied?", answer: "What are network segmentation and firewall rules?", points: 500 }
+        ],
+        "Wired Connections": [
+            { clue: "This type of cable is commonly used for wired internet connections and has an RJ45 connector.", answer: "What is an Ethernet cable?", points: 100 },
+            { clue: "What are two benefits of a wired connection over a wireless one?", answer: "What are faster speeds and more stable connections?", points: 200 },
+            { clue: "This technology allows both power and data to be sent over a single Ethernet cable.", answer: "What is Power over Ethernet or PoE?", points: 300 },
+            { clue: "What are two devices that typically use PoE?", answer: "What are IP cameras and wireless access points?", points: 400 },
+            { clue: "When would you choose to use PoE instead of a traditional wired connection?", answer: "What is when you need to provide both power and data to a device in a location where an electrical outlet is not easily accessible?", points: 500 }
         ]
     }
     // Add other modules here
