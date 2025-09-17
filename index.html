@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Jeopardy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>IT Jeopardy!</h1>
+        <div class="score-container">
+            <div class="player-score">
+                <input type="text" class="player-name" value="Player 1">
+                <span class="score" id="score-1">0</span>
+            </div>
+            <div class="player-score">
+                <input type="text" class="player-name" value="Player 2">
+                <span class="score" id="score-2">0</span>
+            </div>
+            <div class="player-score">
+                <input type="text" class="player-name" value="Player 3">
+                <span class="score" id="score-3">0</span>
+            </div>
+        </div>
+        <div class="dropdown-menu-container">
+            <button id="dropdown-btn">Select Module</button>
+            <div id="module-menu" class="dropdown-content">
+                </div>
+        </div>
+    </header>
+
+    <main id="jeopardy-board" class="jeopardy-board">
+        </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="clue-content"></div>
+            <div class="modal-buttons">
+                <button id="reveal-answer-btn">Reveal Answer</button>
+                <div id="answer-key" style="display:none;"></div>
+            </div>
+            <div class="scoring-controls" id="scoring-controls">
+                <p>Award points to:</p>
+                <div class="scoring-buttons">
+                    <button class="correct-btn" data-player="1">Player 1</button>
+                    <button class="correct-btn" data-player="2">Player 2</button>
+                    <button class="correct-btn" data-player="3">Player 3</button>
+                </div>
+                <p class="subtract-text">Subtract points from:</p>
+                <div class="scoring-buttons">
+                    <button class="incorrect-btn" data-player="1">Player 1</button>
+                    <button class="incorrect-btn" data-player="2">Player 2</button>
+                    <button class="incorrect-btn" data-player="3">Player 3</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
