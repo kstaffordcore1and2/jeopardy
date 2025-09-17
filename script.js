@@ -27,7 +27,7 @@ const gameData = {
             { clue: "This large circuit board is the main component of a computer system, housing the CPU, RAM, and expansion slots.", answer: "What is a motherboard?", points: 100 },
             { clue: "This component is considered the 'brain' of the computer because it executes all instructions from software and hardware.", answer: "What is the Central Processing Unit, or CPU?", points: 200 },
             { clue: "A CPU's speed is measured in these units, with a gigahertz representing one billion cycles per second.", answer: "What are hertz or gigahertz?", points: 300 },
-            { clue: "This term, abbreviated as PCIe, describes the expansion slots on a motherboard used for adding things like video and network cards.", answer: "What is Peripheral Component Interconnect eXtended?", points: 400 },
+            { clue: "This term describes the expansion slots on a motherboard used for adding things like video and network cards.", answer: "What is Peripheral Component Interconnect eXtended, or PCIe?", points: 400 },
             { clue: "The two most important things a processor must match with a motherboard are its socket type and this other physical requirement.", answer: "What are its power and cooling requirements?", points: 500 }
         ],
         "Memory & Storage": [
@@ -39,7 +39,7 @@ const gameData = {
         ],
         "Laptops": [
             { clue: "This essential component is found in a laptop but is not in a desktop computer.", answer: "What is a battery?", points: 100 },
-            { clue: "This smaller physical chip, abbreviated as SODIMM, is a type of RAM specifically designed for laptops.", answer: "What is a SODIMM or Small Outline DIMM?", points: 200 },
+            { clue: "This type of memory chip is specifically designed for laptops due to its smaller physical size.", answer: "What is a SODIMM or Small Outline DIMM?", points: 200 },
             { clue: "Because of their compact design, most laptop components are integrated, which can make this process more limited compared to desktops.", answer: "What is upgrading?", points: 300 },
             { clue: "This type of laptop display offers truer blacks and is more energy-efficient, but is typically more expensive.", answer: "What is an OLED (Organic Light-Emitting Diode) display?", points: 400 },
             { clue: "The three primary types of laptop displays are LCD, IPS, and this one, which offers the best contrast.", answer: "What is OLED?", points: 500 }
@@ -59,7 +59,7 @@ const gameData = {
             { clue: "What is the best practice for maintaining a laptop battery's health?", answer: "What is keeping the charge level between 20% and 80%?", points: 500 }
         ],
         "All About the Details": [
-            { clue: "What does RAM stand for?", answer: "What is Random Access Memory?", points: 100 },
+            { clue: "What does this acronym stand for: RAM?", answer: "What is Random Access Memory?", points: 100 },
             { clue: "The two primary types of storage devices are the Hard Disk Drive and what other type of drive?", answer: "What is a Solid-State Drive?", points: 200 },
             { clue: "This term refers to the process of separating a physical drive into multiple logical sections.", answer: "What is partitioning?", points: 300 },
             { clue: "What two things must match to ensure a new storage drive is compatible with a motherboard?", answer: "What is the interface type?", points: 400 },
