@@ -106,4 +106,252 @@ const gameData = {
             { clue: "Using facial recognition or multi-factor authentication instead of a simple PIN is an example of this.", answer: "What is strong authentication?", points: 100 },
             { clue: "To protect data on a lost or stolen device, many phones allow you to do this remotely.", answer: "What is remotely lock or wipe?", points: 200 },
             { clue: "Public Wi-Fi is risky because it can allow attackers to do this to your data.", answer: "What is intercept/eavesdrop?", points: 300 },
-            { clue: "Wired charging typically has about 90–95% power efficiency, while wireless
+            { clue: "Wired charging typically has about 90–95% power efficiency, while wireless charging averages only this range.", answer: "What is 75–85%?", points: 400 },
+            { clue: "The best charging practice for lithium-ion batteries is to keep the charge between these two percentages.", answer: "What is between 20% and 80%?", points: 500 }
+        ]
+    },
+    "mod 3": {
+        "Wireless & Cellular Data": [
+            { clue: "This type of network connection is limited to the range of a router and is typically used for internet connectivity.", answer: "What is a Wi-Fi network?", points: 100 },
+            { clue: "This term, which stands for Long-Term Evolution, is a specific standard within the 4G scope.", answer: "What is LTE?", points: 200 },
+            { clue: "What are the three most common radio frequency ranges for Wi-Fi networks?", answer: "What are 2.4 GHz, 5 GHz, and 6 GHz?", points: 300 },
+            { clue: "Which type of connection, Wi-Fi or cellular, typically has lower latency for local access and why?", answer: "What is Wi-Fi, because you are closer to the transmission source?", points: 400 },
+            { clue: "What is a significant benefit of cellular networks over Wi-Fi in terms of mobility?", answer: "What is widespread coverage and seamless roaming?", points: 500 }
+        ],
+        "Location Services": [
+            { clue: "This feature on mobile devices allows them to determine their geographic position using GPS, Wi-Fi, and cellular data.", answer: "What are location services?", points: 100 },
+            { clue: "This location method is based on the device's distance from at least three cellular towers.", answer: "What is cellular triangulation?", points: 200 },
+            { clue: "This term refers to setting up a virtual perimeter on a map to be notified when a device crosses it.", answer: "What is geofencing?", points: 300 },
+            { clue: "What are two common applications that rely on location services for functionality?", answer: "What are map applications and ride-sharing/delivery apps?", points: 400 },
+            { clue: "What are two security measures you can take regarding location services on your device?", answer: "What are disabling location services for specific apps and/or using a VPN?", points: 500 }
+        ],
+        "MDM & BYOD": [
+            { clue: "What does the acronym BYOD stand for?", answer: "What is Bring Your Own Device?", points: 100 },
+            { clue: "This type of service allows an organization's IT administrators to remotely manage, monitor, and secure mobile devices.", answer: "What is Mobile Device Management or MDM?", points: 200 },
+            { clue: "What is a major financial benefit of a BYOD policy for an organization?", answer: "What is reduced cost because the organization does not have to purchase devices?", points: 300 },
+            { clue: "With a corporately-owned device under MDM, what are two security actions an administrator can perform remotely?", answer: "What are remotely locking or wiping the device?", points: 400 },
+            { clue: "In a BYOD environment, what is a security risk regarding data and what is a risk related to malware?", answer: "What are data leakage by storing confidential data on a personal device and malware/phishing attacks from personal email or downloads?", points: 500 }
+        ],
+        "Mobile Synchronization": [
+            { clue: "This process ensures that data like contacts, calendars, and emails remain consistent and up-to-date across all of your devices.", answer: "What is synchronization?", points: 100 },
+            { clue: "What are two methods for mobile device synchronization?", answer: "What are cloud services, local networks, or direct connections (like USB)?", points: 200 },
+            { clue: "What is a security consideration when synchronizing sensitive files with cloud services?", answer: "What is ensuring the service offers end-to-end encryption?", points: 300 },
+            { clue: "What should you do before performing a large synchronization operation to prevent data loss?", answer: "What is back up your data?", points: 400 },
+            { clue: "In the event of a sync failure, what are two troubleshooting steps you can take?", answer: "What are checking background data usage is enabled, resetting the configuration, or checking for app updates?", points: 500 }
+        ],
+        "Performance Optimization": [
+            { clue: "What is the primary cause of a mobile device slowing down over time?", answer: "What are application bloat, excessive background processes, or hardware limitations?", points: 100 },
+            { clue: "What is one way to limit background app activity to improve performance and battery life?", answer: "What is turning off features like auto-refresh?", points: 200 },
+            { clue: "Why might a user choose to use a \"lite\" version of an application?", answer: "What is because it consumes fewer resources?", points: 300 },
+            { clue: "What is a simple maintenance action you can perform periodically to clear memory leaks?", answer: "What is restarting your device?", points: 400 },
+            { clue: "What is a built-in tool that Android and iOS offer to help optimize storage?", answer: "What are Files by Google (Android) or Offload Unused Apps (iOS)?", points: 500 }
+        ]
+    },
+    "mod 4": {
+        "Ports & Protocols": [
+            { clue: "This defines the rules for communication between network devices.", answer: "What is a protocol?", points: 100 },
+            { clue: "This number is assigned to a specific service or application to direct data to the correct destination on a device.", answer: "What is a port number?", points: 200 },
+            { clue: "This protocol is considered connection-oriented, ensuring data is delivered in the correct order and without errors.", answer: "What is TCP (Transmission Control Protocol)?", points: 300 },
+            { clue: "This protocol is considered connectionless and is primarily used for speed over reliability, such as in video streaming.", answer: "What is UDP (User Datagram Protocol)?", points: 400 },
+            { clue: "What are the two most important components that facilitate communication between devices in any network?", answer: "What are networking ports and protocols?", points: 500 }
+        ],
+        "Network Devices": [
+            { clue: "This device connects different network segments and uses a routing table to forward data packets to the correct destination.", answer: "What is a router?", points: 100 },
+            { clue: "This device connects multiple devices on the same local network, using their MAC addresses to direct traffic.", answer: "What is a switch?", points: 200 },
+            { clue: "This device allows wireless devices to connect to a wired network.", answer: "What is an access point?", points: 300 },
+            { clue: "In a network, what are two primary functions of a switch?", answer: "What are connecting devices and forwarding traffic?", points: 400 },
+            { clue: "What is the key difference between a switch and a router?", answer: "What is that a switch connects devices on a local network, while a router connects multiple networks?", points: 500 }
+        ],
+        "Addressing & Topologies": [
+            { clue: "What does the acronym IP stand for?", answer: "What is Internet Protocol?", points: 100 },
+            { clue: "What is the primary function of an IP address?", answer: "What is to uniquely identify a device on a network?", points: 200 },
+            { clue: "What is the most common addressing scheme used for devices on the internet?", answer: "What is IPv4?", points: 300 },
+            { clue: "What is the primary benefit of IPv6 over IPv4?", answer: "What is that it has a much larger address space?", points: 400 },
+            { clue: "What type of physical topology has all devices connected to a single central hub?", answer: "What is a star topology?", points: 500 }
+        ],
+        "Firewalls & Subnetting": [
+            { clue: "This is a security device or software that filters incoming and outgoing network traffic based on a set of rules.", answer: "What is a firewall?", points: 100 },
+            { clue: "In a network, what is the primary purpose of a firewall?", answer: "What is to prevent unauthorized access?", points: 200 },
+            { clue: "This term refers to the process of dividing a large network into smaller, more manageable sub-networks.", answer: "What is subnetting?", points: 300 },
+            { clue: "What are two benefits of using subnetting in a large network?", answer: "What are improved performance and increased security?", points: 400 },
+            { clue: "If a company wants to separate its guest Wi-Fi from its corporate network, which two networking concepts would be applied?", answer: "What are network segmentation and firewall rules?", points: 500 }
+        ],
+        "Wired Connections": [
+            { clue: "This type of cable is commonly used for wired internet connections and has an RJ45 connector.", answer: "What is an Ethernet cable?", points: 100 },
+            { clue: "What are two benefits of a wired connection over a wireless one?", answer: "What are faster speeds and more stable connections?", points: 200 },
+            { clue: "This technology allows both power and data to be sent over a single Ethernet cable.", answer: "What is Power over Ethernet or PoE?", points: 300 },
+            { clue: "What are two devices that typically use PoE?", answer: "What are IP cameras and wireless access points?", points: 400 },
+            { clue: "When would you choose to use PoE instead of a traditional wired connection?", answer: "What is when you need to provide both power and data to a device in a location where an electrical outlet is not easily accessible?", points: 500 }
+        ],
+        "Wireless Infrastructure": [
+            { clue: "This device is used to extend a wired network into a wireless one, typically in an office or public hotspot setting.", answer: "What is an access point?", points: 100 },
+            { clue: "This device receives an existing Wi-Fi signal and rebroadcasts it to increase coverage, but can reduce the bandwidth in the process.", answer: "What is a wireless repeater?", points: 200 },
+            { clue: "This device can extend an existing Wi-Fi signal and, unlike a repeater, can use a wired Ethernet connection to prevent speed reduction.", answer: "What is a wireless extender?", points: 300 },
+            { clue: "An extender can connect to the original Wi-Fi signal using a wired connection, which is referred to as this.", answer: "What is a backhaul?", points: 400 },
+            { clue: "What is the primary difference between a wireless repeater and a wireless extender?", answer: "What is that an extender can use a wired connection to its source, whereas a repeater only works wirelessly?", points: 500 }
+        ]
+    }
+    // Add other modules here
+};
+
+const board = document.getElementById('jeopardy-board');
+const modal = document.getElementById('modal');
+const clueContent = document.getElementById('clue-content');
+const revealAnswerBtn = document.getElementById('reveal-answer-btn');
+const answerKey = document.getElementById('answer-key');
+const scoreControls = document.getElementById('scoring-controls');
+const scoreDisplays = [
+    document.getElementById('score-1'),
+    document.getElementById('score-2'),
+    document.getElementById('score-3')
+];
+const moduleMenu = document.getElementById('module-menu');
+const dropdownBtn = document.getElementById('dropdown-btn');
+
+let currentClue;
+let currentPoints;
+let currentPlayerScores = [0, 0, 0];
+let currentModuleKey = "mod 1";
+
+// Function to generate the game board for a specific module
+function createBoard(moduleKey) {
+    board.innerHTML = '';
+    const currentModuleData = gameData[moduleKey];
+    currentModuleKey = moduleKey;
+    const moduleIndex = parseInt(moduleKey.split(' ')[1]) - 1;
+    dropdownBtn.textContent = moduleNames[moduleIndex];
+
+    if (!currentModuleData) {
+        board.innerHTML = '<p style="font-size: 1.5rem; text-align: center; color: #ffd700;">Content for this module is not yet available. Check back soon!</p>';
+        return;
+    }
+
+    const categories = Object.values(currentModuleData);
+    const categoryTitles = Object.keys(currentModuleData);
+    const numClues = categories[0].length;
+
+    categoryTitles.forEach(title => {
+        const categoryTitle = document.createElement('div');
+        categoryTitle.classList.add('category-title');
+        categoryTitle.textContent = title;
+        board.appendChild(categoryTitle);
+    });
+
+    for (let i = 0; i < numClues; i++) {
+        for (let j = 0; j < categories.length; j++) {
+            const clue = categories[j][i];
+            const clueCard = document.createElement('div');
+            clueCard.classList.add('clue-card');
+            clueCard.textContent = clue.points;
+            clueCard.dataset.category = j;
+            clueCard.dataset.clueIndex = i;
+            clueCard.addEventListener('click', () => showClue(clue, clueCard));
+            board.appendChild(clueCard);
+        }
+    }
+}
+
+// Function to generate the dropdown menu links
+function createDropdownLinks() {
+    moduleNames.forEach((name, index) => {
+        const a = document.createElement('a');
+        const moduleKey = `mod ${index + 1}`;
+        a.href = "#";
+        a.textContent = name;
+        a.dataset.module = moduleKey;
+
+        // Make the link clickable only if content exists in gameData
+        if (gameData[moduleKey]) {
+            a.classList.add('clickable');
+            a.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelectorAll('.dropdown-content a').forEach(link => link.classList.remove('active'));
+                a.classList.add('active');
+                createBoard(moduleKey);
+                moduleMenu.style.display = 'none'; // Hide the menu after selection
+            });
+        }
+        
+        moduleMenu.appendChild(a);
+    });
+}
+
+// Toggle the dropdown menu visibility
+dropdownBtn.addEventListener('click', () => {
+    moduleMenu.style.display = moduleMenu.style.display === 'block' ? 'none' : 'block';
+});
+
+// Close the dropdown if the user clicks outside of it
+window.addEventListener('click', (e) => {
+    if (!e.target.matches('#dropdown-btn') && !e.target.closest('.dropdown-content')) {
+        if (moduleMenu.style.display === 'block') {
+            moduleMenu.style.display = 'none';
+        }
+    }
+});
+
+// Function to show the clue in the modal
+function showClue(clue, cardElement) {
+    currentClue = clue;
+    currentPoints = clue.points;
+    clueContent.textContent = clue.clue;
+    answerKey.textContent = clue.answer;
+
+    modal.style.display = 'block';
+
+    // Disable the card after it's clicked
+    cardElement.classList.add('disabled');
+
+    // Reset modal state
+    revealAnswerBtn.style.display = 'block';
+    answerKey.style.display = 'none';
+    scoreControls.style.display = 'none';
+}
+
+// Function to handle revealing the answer
+revealAnswerBtn.addEventListener('click', () => {
+    answerKey.style.display = 'block';
+    revealAnswerBtn.style.display = 'none';
+    scoreControls.style.display = 'block';
+});
+
+// Event listeners for Correct/Incorrect buttons
+document.querySelectorAll('.correct-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const playerIndex = parseInt(button.dataset.player) - 1;
+        currentPlayerScores[playerIndex] += currentPoints;
+        updateScores();
+    });
+});
+
+document.querySelectorAll('.incorrect-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const playerIndex = parseInt(button.dataset.player) - 1;
+        currentPlayerScores[playerIndex] -= currentPoints;
+        updateScores();
+    });
+});
+
+// Function to update score display on the board
+function updateScores() {
+    scoreDisplays.forEach((display, index) => {
+        display.textContent = currentPlayerScores[index];
+    });
+}
+
+// Close modal when close button is clicked
+document.querySelector('.close-button').addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+// Close modal when clicking outside of it
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    createDropdownLinks();
+    createBoard("mod 1"); // Load the first module board by default
+});
