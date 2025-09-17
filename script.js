@@ -308,201 +308,270 @@ const gameData = {
             { clue: "Within a DHCP scope, you can configure this to prevent the server from assigning certain addresses that are already in use.", answer: "What is an exclusion?", points: 400 },
             { clue: "A DHCP client attempts to renew its IP address lease at this percentage of the lease duration.", answer: "What is 50%?", points: 500 }
         ],
-        "Virtual LANs & VPNs": [
-            { clue: "What does the acronym VLAN stand for?", answer: "What is Virtual Local Area Network?", points: 100 },
-            { clue: "This technology allows devices on different physical network segments to communicate as if they were on the same network.", answer: "What is a VLAN?", points: 200 },
-            { clue: "This technology creates a secure, encrypted connection over a public network, allowing remote users to safely access a private network.", answer: "What is a VPN, or Virtual Private Network?", points: 300 },
-            { clue: "In a corporate network, what are two benefits of using VLANs?", answer: "What are enhanced security and improved performance?", points: 400 },
-            { clue: "What are the two primary protocols that most VPNs rely on for secure communications?", answer: "What are SSL and IPSec?", points: 500 }
+        "VLANs 101": [
+            { clue: "This is a logically segmented network that groups devices together regardless of their physical location.", answer: "What is a Virtual Local Area Network, or VLAN?", points: 100 },
+            { clue: "VLANs help improve network security by allowing you to do this to different groups of systems.", answer: "What is isolate them?", points: 200 },
+            { clue: "What is the primary benefit of using VLANs in a large enterprise network?", answer: "What is better organization and management?", points: 300 },
+            { clue: "What is a common result of using VLANs to create smaller networks within a larger one?", answer: "What is a reduction in broadcast traffic?", points: 400 },
+            { clue: "What do VLANs use instead of a physical location to group systems?", answer: "What is software configuration?", points: 500 }
         ],
-        "NAT & Port Forwarding": [
-            { clue: "This networking concept translates a private IP address into a public one, allowing multiple devices on a private network to share a single public IP address.", answer: "What is NAT, or Network Address Translation?", points: 100 },
-            { clue: "This process directs incoming network traffic from a specific port to a particular device on a private network.", answer: "What is port forwarding?", points: 200 },
-            { clue: "What is a primary benefit of using NAT?", answer: "What is that it helps to conserve the limited number of public IPv4 addresses?", points: 300 },
-            { clue: "When would you typically need to use port forwarding?", answer: "What is when you need to access a device on your internal network from the internet, such as a security camera or a game server?", points: 400 },
-            { clue: "What is one key security concern with using port forwarding?", answer: "What is that it makes a service on a private network visible to the public internet, which can increase the risk of a cyberattack?", points: 500 }
+        "VLAN Types & Tags": [
+            { clue: "This type of VLAN is always present on a VLAN-enabled switch and is the one that all ports are automatically added to.", answer: "What is the default VLAN?", points: 100 },
+            { clue: "This type of VLAN is used for standard network communications.", answer: "What is a data VLAN?", points: 200 },
+            { clue: "This type of VLAN is used to carry traffic like video conferencing because it often has a higher transmission priority.", answer: "What is a voice VLAN?", points: 300 },
+            { clue: "This type of VLAN is used for traffic that has not been specifically tagged.", answer: "What is the native VLAN?", points: 400 },
+            { clue: "What is the standard defined by the IEEE for identifying VLAN traffic?", answer: "What is 802.1Q?", points: 500 }
         ]
     },
     "mod 8": {
-        "Network Tools": [
-            { clue: "This tool is used to attach connectors to the end of network cables and comes in many different types.", answer: "What are crimpers?", points: 100 },
-            { clue: "This tool is used to remove the outer insulation of a cable without damaging the inner wires.", answer: "What are cable strippers?", points: 200 },
-            { clue: "This tool is a handheld device used to test the physical connectivity and integrity of a cable.", answer: "What is a cable tester?", points: 300 },
-            { clue: "What is a common issue that a cable tester would help you identify?", answer: "What is a short or an open circuit, a crossed pair, or a split pair?", points: 400 },
-            { clue: "This is a type of software used to measure and analyze wireless signals to determine their quality and potential interference.", answer: "What is a Wi-Fi analyzer?", points: 500 }
+        "Cable Termination Tools": [
+            { clue: "This tool is used to remove the outer insulation of a cable without damaging the inner wires.", answer: "What is a cable stripper?", points: 100 },
+            { clue: "This tool is used to attach connectors, such as RJ45, to the end of a network cable.", answer: "What is a crimper?", points: 200 },
+            { clue: "This type of tool is used to insert copper wires into a patch panel or keystone jack.", answer: "What is a punch down tool?", points: 300 },
+            { clue: "What is the name of the connector commonly used in Ethernet networking?", answer: "What is RJ45?", points: 400 },
+            { clue: "What is a benefit of using a self-adjusting wire stripper over a standard adjustable one?", answer: "What is that it automatically adjusts to the wire gauge?", points: 500 }
         ],
-        "Troubleshooting Methodologies": [
-            { clue: "In troubleshooting, this is the first step where you gather information about the problem.", answer: "What is identifying the problem?", points: 100 },
-            { clue: "After identifying the problem, what is the next step you should take in the troubleshooting process?", answer: "What is establishing a theory of probable cause?", points: 200 },
-            { clue: "What is the third step in the troubleshooting process?", answer: "What is testing the theory to determine the cause?", points: 300 },
-            { clue: "What are the two steps that follow testing the theory of probable cause?", answer: "What are establishing a plan of action to resolve the problem and implementing the solution or escalating the issue?", points: 400 },
-            { clue: "What are the final two steps of the troubleshooting process?", answer: "What are verifying full system functionality and documenting the findings and actions?", points: 500 }
+        "Network Testers": [
+            { clue: "This tool consists of a toner generator and a probe receiver to identify a specific cable in a bundle by sound.", answer: "What is a toner probe?", points: 100 },
+            { clue: "This type of tester only checks if a wire is connected from end to end.", answer: "What is a continuity tester?", points: 200 },
+            { clue: "This device can not only detect a break in a cable but also indicate the distance to the break.", answer: "What is a Time Domain Reflectometer, or TDR?", points: 300 },
+            { clue: "This type of tester checks for correct wiring standards, like T568A or T568B, and can detect miswiring.", answer: "What is a wire map tester?", points: 400 },
+            { clue: "This comprehensive tool determines if a cable is suitable for specific transmission speeds or frequencies.", answer: "What is a certifier?", points: 500 }
         ],
-        "Network Diagnostics": [
-            { clue: "This term describes an issue where a network port or interface continuously toggles between an up and a down state.", answer: "What is port flapping?", points: 100 },
-            { clue: "What is the most common reason for a DHCP failure?", answer: "What is an active scope that is empty, the scope is not active, or a rogue DHCP server?", points: 200 },
-            { clue: "This type of interference occurs when two or more wireless signals use the same frequency channel.", answer: "What is external interference?", points: 300 },
-            { clue: "What is a common cause of external interference?", answer: "What are microwave ovens, cordless phones, or a neighbor’s Wi-Fi network?", points: 400 },
-            { clue: "When troubleshooting, what are two reasons why you would disable a port or a switch?", answer: "What are to check for a loop and to confirm that it is not causing a broadcast storm?", points: 500 }
+        "Network Taps & SPAN": [
+            { clue: "This hardware device is used to monitor and analyze network traffic without disrupting normal operations.", answer: "What is a network tap?", points: 100 },
+            { clue: "This type of tap requires an external power source but can still forward traffic if the power fails.", answer: "What is an active tap?", points: 200 },
+            { clue: "This type of tap is often used for fiber networks and does not require power.", answer: "What is a passive tap?", points: 300 },
+            { clue: "This type of tap merges data from multiple network links into a single monitoring port.", answer: "What is an aggregation tap?", points: 400 },
+            { clue: "What is the key difference between a network tap and a SPAN port?", answer: "What is that a network tap is a hardware device, and a SPAN port is software that replicates traffic within a switch?", points: 500 }
         ],
-        "Traceroute & Wireshark": [
-            { clue: "This command line utility is used to trace the path a packet takes to a destination and to identify potential network bottlenecks or a routing loop.", answer: "What is traceroute?", points: 100 },
-            { clue: "This tool is an open-source packet analyzer that is used to capture and analyze network traffic.", answer: "What is Wireshark?", points: 200 },
-            { clue: "When using the Windows traceroute command, this is a flag you can add to prevent it from resolving IP addresses to host names.", answer: "What is -d?", points: 300 },
-            { clue: "When using Wireshark, this is what you would use to filter the captured traffic to focus on specific packets.", answer: "What is a display filter?", points: 400 },
-            { clue: "When running Wireshark, what are two key pieces of information you would see for each packet?", answer: "What are the source IP address, the destination IP address, the source port, and the destination port?", points: 500 }
+        "Command-Line Diagnostics": [
+            { clue: "This command-line utility tests connectivity between two network points by sending an ICMP Echo request.", answer: "What is ping?", points: 100 },
+            { clue: "This Windows command displays the network adapter configuration.", answer: "What is ipconfig?", points: 200 },
+            { clue: "This command-line utility maps the path that data takes through a network by showing information about each device along the way.", answer: "What is traceroute, or tracert?", points: 300 },
+            { clue: "What is the key difference between ipconfig and ipconfig /all?", answer: "What is that the '/all' parameter provides a more verbose version of the network card information?", points: 400 },
+            { clue: "What is one key reason why IPv6 traceroute results often show less information about routers along the path than IPv4?", answer: "What is that many routers are configured not to provide information about their names?", points: 500 }
         ],
-        "Common Troubleshooting Scenarios": [
-            { clue: "What is one possible cause of slow Wi-Fi speeds on a mobile device?", answer: "What is a weak signal, a crowded channel, or being too far from the access point?", points: 100 },
-            { clue: "In a network, this term refers to the variation in the delay of received packets, which can affect real-time applications like video conferencing.", answer: "What is jitter?", points: 200 },
-            { clue: "What is a common first step to troubleshoot a network connectivity issue on a computer?", answer: "What is to run the Windows network troubleshooter or to ping the default gateway?", points: 300 },
-            { clue: "When troubleshooting an issue where a user cannot connect to the internet, what is a simple first step to take?", answer: "What is to check that they have an IP address and a default gateway?", points: 400 },
-            { clue: "If a user can connect to some websites but not others, what is the most likely culprit?", answer: "What is a DNS issue or a firewall that is blocking certain outbound connections?", points: 500 }
+        "Advanced Troubleshooting": [
+            { clue: "This open-source, free software captures network packets for analysis and can help identify network and security problems.", answer: "What is Wireshark?", points: 100 },
+            { clue: "This small device is used to test a network port by sending a signal back to itself.", answer: "What is a loopback plug?", points: 200 },
+            { clue: "What is one key benefit of using a loopback plug for troubleshooting?", answer: "What is that it helps diagnose port failures without requiring an external network connection?", points: 300 },
+            { clue: "What is the term for a situation where network packets are not reaching their destination, causing interruptions in a data stream?", answer: "What is packet loss?", points: 400 },
+            { clue: "What is the key benefit of an AI-driven network diagnostic system over traditional methods?", answer: "What is that it can analyze vast amounts of data and predict potential future problems?", points: 500 }
         ],
-        "Preventative Maintenance": [
-            { clue: "What is the most common cause of hardware failure?", answer: "What is overheating?", points: 100 },
-            { clue: "What is a common solution to overheating?", answer: "What is to clean the internal components or add better cooling?", points: 200 },
-            { clue: "This term describes the process of checking your log files to find any errors that may be indicative of a hardware or software issue.", answer: "What is system monitoring?", points: 300 },
-            { clue: "What are two things you can do to keep your systems running as long as possible?", answer: "What are replacing aging components and keeping the system up to date?", points: 400 },
-            { clue: "What is the primary way that preventative maintenance helps to extend the life of a system?", answer: "What is by ensuring that the system is running as efficiently as possible?", points: 500 }
+        "Common Cable Issues": [
+            { clue: "This type of cable issue, where the wires are in physical contact with each other, can be caused by physical damage.", answer: "What is a short circuit?", points: 100 },
+            { clue: "A break in a cable or a poor connection at the end of a cable will cause this type of circuit.", answer: "What is an open circuit?", points: 200 },
+            { clue: "This type of issue is caused by an incorrect wiring order, such as when the T568A or T568B standards are not followed.", answer: "What are crossed pairs?", points: 300 },
+            { clue: "What is one way a technician can troubleshoot a loose connection?", answer: "What is by swapping out the patch cables or using a cable tester?", points: 400 },
+            { clue: "What are two common causes of physical damage to cables in an office environment?", answer: "What is people pulling on cables or running them over with chairs?", points: 500 }
         ]
     },
     "mod 9": {
         "Ethernet Cables": [
-            { clue: "This is a type of Ethernet cable that is considered a general standard for basic home and office networks and supports speeds up to 1 Gbps.", answer: "What is Cat5e?", points: 100 },
-            { clue: "This type of Ethernet cable can handle up to 10 Gbps over shorter distances.", answer: "What is Cat6?", points: 200 },
-            { clue: "What are the two primary wiring standards for terminating Ethernet cables?", answer: "What are T568A and T568B?", points: 300 },
-            { clue: "This type of cable is resistant to external interference and is often used in industrial environments.", answer: "What is STP or Shielded Twisted Pair?", points: 400 },
-            { clue: "This type of cable uses light pulses to transmit data, enabling much faster speeds and longer distances than traditional copper cables.", answer: "What is a fiber optic cable?", points: 500 }
+            { clue: "This category of Ethernet cable is an enhanced version of the original Cat5 and supports speeds up to 1 Gbps.", answer: "What is Cat5e?", points: 100 },
+            { clue: "This category of Ethernet cable supports up to 10 Gbps over distances up to 55 meters.", answer: "What is Cat6?", points: 200 },
+            { clue: "This category of Ethernet cable adds shielding and reduces interference, supporting 10 Gbps or higher in noisy environments.", answer: "What is Cat7?", points: 300 },
+            { clue: "This is the newest and fastest category of Ethernet cable, supporting up to 40 Gbps over shorter runs.", answer: "What is Cat8?", points: 400 },
+            { clue: "Name two advantages of a wired Ethernet connection over Wi-Fi.", answer: "What are faster speeds, lower latency, or more reliable performance?", points: 500 }
         ],
-        "Video Cables": [
-            { clue: "This cable is an older analog standard for video transmission.", answer: "What is VGA?", points: 100 },
-            { clue: "This digital video interface is the most common standard for connecting displays to computers and televisions and also transmits audio.", answer: "What is HDMI?", points: 200 },
-            { clue: "This digital video interface is a competitor to HDMI and is often found on high-end graphics cards and monitors.", answer: "What is DisplayPort?", points: 300 },
-            { clue: "This type of connector is used for both power and data transmission, and is becoming more common on monitors for single-cable solutions.", answer: "What is USB-C?", points: 400 },
-            { clue: "What is the primary advantage of DisplayPort over HDMI?", answer: "What is that it can support higher resolutions and refresh rates?", points: 500 }
+        "Twisted Pair Cabling": [
+            { clue: "This type of cabling relies solely on the twisting of wire pairs to minimize interference and crosstalk.", answer: "What is unshielded twisted pair, or UTP?", points: 100 },
+            { clue: "This type of cabling adds a metallic layer around the twisted wires to block external electromagnetic interference.", answer: "What is shielded twisted pair, or STP?", points: 200 },
+            { clue: "This is a major trade-off of using STP instead of UTP cabling.", answer: "What is that it is more expensive and less flexible?", points: 300 },
+            { clue: "What is a crucial installation step for STP that is not required for UTP?", answer: "What is proper grounding?", points: 400 },
+            { clue: "In what type of environment would you most likely choose STP over UTP?", answer: "What is in an industrial setting or data center where electromagnetic interference is common?", points: 500 }
         ],
-        "Peripheral & Storage Cables": [
-            { clue: "This is a common interface and cable for connecting external devices like mice, keyboards, and printers.", answer: "What is USB?", points: 100 },
-            { clue: "This cable is used to connect a hard drive to a motherboard inside a computer.", answer: "What is a SATA data cable?", points: 200 },
-            { clue: "This is a high-speed, versatile port that can connect to displays, external drives, and other peripherals.", answer: "What is Thunderbolt?", points: 300 },
-            { clue: "This type of storage cable is used to provide power to hard drives and solid-state drives.", answer: "What is a SATA power cable?", points: 400 },
-            { clue: "What is the primary advantage of Thunderbolt over USB?", answer: "What is that it offers higher speeds and can daisy-chain multiple devices?", points: 500 }
+        "Optical Fiber": [
+            { clue: "This type of cable transmits data using light pulses instead of electrical signals.", answer: "What is optical fiber?", points: 100 },
+            { clue: "This type of optical fiber uses a single light path and is ideal for long-distance transmissions.", answer: "What is single-mode fiber, or SMF?", points: 200 },
+            { clue: "This type of optical fiber uses multiple light paths and is more common in local area networks for shorter distances.", answer: "What is multi-mode fiber, or MMF?", points: 300 },
+            { clue: "What is a major advantage of optical fiber over copper cabling in terms of interference?", answer: "What is that it is immune to electromagnetic interference?", points: 400 },
+            { clue: "Name one application for which single-mode fiber is better suited, and one for which multi-mode fiber is better suited.", answer: "What is single-mode for telecommunications or ISPs, and multi-mode for data centers or LANs?", points: 500 }
         ],
-        "Connector Types": [
-            { clue: "This common connector is used on a telephone cable.", answer: "What is an RJ11?", points: 100 },
-            { clue: "This common connector is used on an Ethernet cable.", answer: "What is an RJ45?", points: 200 },
-            { clue: "This is a large, four-pin power connector often used for legacy devices and fans inside a computer case.", answer: "What is a Molex connector?", points: 300 },
-            { clue: "This connector is used on a fiber optic cable.", answer: "What is an LC, SC, or ST connector?", points: 400 },
-            { clue: "What is the name of the connector type used for coaxial cable?", answer: "What is a BNC or F-Type?", points: 500 }
+        "Connectors & Adapters": [
+            { clue: "What does the RJ in RJ45 stand for?", answer: "What is Registered Jack?", points: 100 },
+            { clue: "This fiber optic connector is known for its compact size and is widely used in high-density data centers.", answer: "What is a Lucent Connector, or LC?", points: 200 },
+            { clue: "This legacy video adapter is analog and is still used to connect older monitors to newer systems.", answer: "What is a DVI to VGA adapter?", points: 300 },
+            { clue: "This ruggedized connector is used in industrial environments because it resists moisture, vibration, and dust.", answer: "What is an M12 connector?", points: 400 },
+            { clue: "What is the primary function of an adapter?", answer: "What is to allow one type of connector or signal to interface with another?", points: 500 }
         ],
-        "Cable & Connector Maintenance": [
-            { clue: "What is the most common cause of cable-related issues?", answer: "What is physical damage?", points: 100 },
-            { clue: "What is a tool you can use to identify if a network cable is damaged?", answer: "What is a cable tester?", points: 200 },
-            { clue: "What is one way to prevent physical damage to a cable?", answer: "What is to use cable management tools or to avoid excessive bending?", points: 300 },
-            { clue: "A poorly crimped connector may not cause an issue at low speeds but can cause this at high frequencies.", answer: "What is interference?", points: 400 },
-            { clue: "What are two things you should consider when selecting a cable for a specific use case?", answer: "What are the required data speed, the distance, and the environment?", points: 500 }
+        "Wiring & Standards": [
+            { clue: "These two wiring standards ensure consistency and compatibility for twisted pair Ethernet cables.", answer: "What are T568A and T568B?", points: 100 },
+            { clue: "What is the name for the termination points used in structured cabling that allow for organized wire connections without soldering?", answer: "What are punch down blocks?", points: 200 },
+            { clue: "This older type of punch down block is primarily used for analog voice systems and is not suitable for modern Ethernet networks.", answer: "What is a 66 block?", points: 300 },
+            { clue: "The most common type of punch down block for modern Ethernet networks is a 110 block, while this type, developed in Europe, is known for reducing crosstalk.", answer: "What is a Krone block?", points: 400 },
+            { clue: "What is one key best practice when installing Ethernet cables to ensure proper performance?", answer: "What is avoiding sharp bends or keeping them away from sources of electromagnetic interference?", points: 500 }
         ],
-        "Power Connectors": [
-            { clue: "This is the primary power connector used to power a desktop motherboard.", answer: "What is a 24-pin ATX connector?", points: 100 },
-            { clue: "This is the primary power connector used for a CPU.", answer: "What is an 8-pin or 4-pin EPS connector?", points: 200 },
-            { clue: "This power connector is used for older, non-SATA hard drives and optical drives.", answer: "What is a Molex connector?", points: 300 },
-            { clue: "What is the primary power connector used for a graphics card?", answer: "What is a PCIe power connector?", points: 400 },
-            { clue: "This standard for power delivery is becoming more common and supports up to 240 watts, enabling it to power larger devices like laptops and monitors.", answer: "What is USB-C Power Delivery?", points: 500 }
-        ]
-    },
-    "mod 10": {
-        "SODIMM": [
-            { clue: "This type of RAM is smaller than a standard DIMM and is typically found in laptops and small form factor PCs.", answer: "What is a Small Outline Dual Inline Memory Module, or SODIMM?", points: 100 },
-            { clue: "SODIMMs are generally engineered to operate at a lower voltage than standard DIMMs to help with this.", answer: "What is extending battery life?", points: 200 },
-            { clue: "This feature of SODIMMs allows users to easily expand a device's memory to extend its useful life and improve performance.", answer: "What is upgradability?", points: 300 },
-            { clue: "What are two types of computing environments where SODIMMs are the go-to memory choice due to their compact size and energy efficiency?", answer: "What are laptops, mini PCs, and embedded systems?", points: 400 },
-            { clue: "What are two things you should check before installing a new SODIMM module to ensure compatibility?", answer: "What are the laptop's motherboard and chipset support the RAM type and that the new memory matches the system's speed and voltage?", points: 500 }
-        ],
-        "DDR Generations": [
-            { clue: "DDR3 memory brought improvements in both performance and efficiency, most notably by operating at this lower voltage compared to its predecessor.", answer: "What is 1.5 volts?", points: 100 },
-            { clue: "This type of RAM succeeded DDR3, bringing increased bandwidth, lower voltage, and greater memory capacities.", answer: "What is DDR4?", points: 200 },
-            { clue: "This type of memory, which is becoming more prevalent in ultra-thin laptops and mobile devices, consumes less power while maintaining high performance.", answer: "What is Low Power DDR (LPDDR)?", points: 300 },
-            { clue: "What are two limitations of DDR3 memory in modern systems?", answer: "What are slower speeds compared to DDR4 and DDR5 and limited scalability?", points: 400 },
-            { clue: "What is the key advantage of DDR5 over DDR4?", answer: "What is that it offers increased bandwidth and better power efficiency?", points: 500 }
-        ],
-        "Memory Channels": [
-            { clue: "This memory configuration is where only one memory module communicates with the memory controller at a time.", answer: "What is single channel memory mode?", points: 100 },
-            { clue: "This memory configuration, which is common in many consumer desktops, uses two RAM modules to double the memory bandwidth.", answer: "What is dual channel memory mode?", points: 200 },
-            { clue: "This older memory configuration was designed for specific high-performance workstations and servers and uses three RAM modules.", answer: "What is triple channel memory?", points: 300 },
-            { clue: "What is a significant benefit of using a multi-channel memory configuration?", answer: "What is an increase in memory bandwidth for better performance in demanding tasks?", points: 400 },
-            { clue: "This memory configuration uses four RAM modules simultaneously and is ideal for intensive workloads like 3D rendering and scientific computing.", answer: "What is quad channel memory?", points: 500 }
-        ],
-        "Storage Devices": [
-            { clue: "This is a type of storage that uses a spinning disk and is more cost-effective for large capacities but is slower.", answer: "What is a Hard Disk Drive, or HDD?", points: 100 },
-            { clue: "This faster, more durable storage device does not have any moving parts.", answer: "What is a Solid-State Drive, or SSD?", points: 200 },
-            { clue: "This storage device is directly connected to the motherboard and uses PCIe for much faster speeds.", answer: "What is NVMe?", points: 300 },
-            { clue: "This term describes a collection of hard drives that work together as a single logical unit to improve performance, provide redundancy, or both.", answer: "What is RAID, or Redundant Array of Independent Disks?", points: 400 },
-            { clue: "What are two key advantages of SSDs over HDDs?", answer: "What are faster speeds, better durability, and lower power consumption?", points: 500 }
-        ],
-        "Removable Storage": [
-            { clue: "This type of removable storage is perfect for quick and temporary file transfers between computers.", answer: "What is a flash drive?", points: 100 },
-            { clue: "This type of removable storage is commonly used in cameras, drones, and smartphones to expand storage.", answer: "What is a memory card?", points: 200 },
-            { clue: "Optical discs like CDs and DVDs are ideal for this purpose due to their long-term data retention.", answer: "What is data archival or backups?", points: 300 },
-            { clue: "What are two benefits of using removable storage?", answer: "What are portability and convenience?", points: 400 },
-            { clue: "What is one type of removable storage you might use to install an operating system?", answer: "What is a bootable flash drive?", points: 500 }
-        ],
-        "Memory Troubleshooting": [
-            { clue: "What is the most common reason a memory module fails to activate its designated channel mode?", answer: "What is improper placement of the modules?", points: 100 },
-            { clue: "What is a first step to take if you are having issues with your RAM modules?", answer: "What is to reseat the modules?", points: 200 },
-            { clue: "What is a common troubleshooting step for a system that isn't recognizing quad channel memory?", answer: "What is to verify that all four RAM modules are installed in the correct slots as specified in the motherboard manual?", points: 300 },
-            { clue: "What is a tool you can use to detect faulty RAM modules?", answer: "What is Windows Memory Diagnostic or MemTest86?", points: 400 },
-            { clue: "What is one thing you can do to optimize your memory's performance, especially for high-speed modules?", answer: "What is to enable XMP profiles in the BIOS?", points: 500 }
-        ]
-    },
-    "mod 11": {
-        "Motherboards & Form Factors": [
-            { clue: "This is a large circuit board that facilitates communication between all of a computer's components.", answer: "What is a motherboard?", points: 100 },
-            { clue: "This term refers to the physical size and shape of a motherboard, such as ATX and MicroATX.", answer: "What is a form factor?", points: 200 },
-            { clue: "This is a common form factor for small-scale desktops and home theater PCs.", answer: "What is Mini-ITX?", points: 300 },
-            { clue: "What two things must a motherboard match with a CPU for compatibility?", answer: "What is the socket type and the chipset?", points: 400 },
-            { clue: "What are two benefits of a full-sized ATX motherboard?", answer: "What are more expansion slots and better cooling due to more space?", points: 500 }
-        ],
-        "The CPU": [
-            { clue: "This component, often called the 'brain' of the computer, executes all instructions from software and hardware.", answer: "What is the Central Processing Unit, or CPU?", points: 100 },
-            { clue: "A CPU’s socket and its chipset must match this other main component to ensure compatibility.", answer: "What is a motherboard?", points: 200 },
-            { clue: "The speed of a processor is measured in this unit.", answer: "What is gigahertz?", points: 300 },
-            { clue: "What is a common reason for CPU overheating?", answer: "What is an insufficient cooling solution, a build-up of dust, or dry thermal paste?", points: 400 },
-            { clue: "What is one key difference between a high-end CPU and a low-end CPU?", answer: "What is core count, clock speed, or cache size?", points: 500 }
-        ],
-        "RAM & Memory": [
-            { clue: "This type of temporary, volatile storage holds the data and instructions the CPU is currently using.", answer: "What is Random Access Memory, or RAM?", points: 100 },
-            { clue: "This memory module, which is about half the length of a DIMM, is typically used in laptops and small form factor devices.", answer: "What is a SODIMM?", points: 200 },
-            { clue: "What two things about a RAM module must be compatible with the motherboard?", answer: "What are the RAM type and the pin count?", points: 300 },
-            { clue: "What is the primary function of RAM?", answer: "What is to serve as temporary, high-speed storage for a computer's active data?", points: 400 },
-            { clue: "What is one of the key differences between DDR4 and DDR5 memory?", answer: "What is that DDR5 offers increased bandwidth and better power efficiency?", points: 500 }
-        ],
-        "Storage Solutions": [
-            { clue: "This older type of storage uses a spinning disk and is more cost-effective for large capacities.", answer: "What is a Hard Disk Drive, or HDD?", points: 100 },
-            { clue: "This storage device uses flash memory and has no moving parts.", answer: "What is a Solid-State Drive, or SSD?", points: 200 },
-            { clue: "What is a key benefit of an SSD over an HDD?", answer: "What is a faster read/write speed?", points: 300 },
-            { clue: "What is a key benefit of an HDD over an SSD?", answer: "What is a lower cost per terabyte?", points: 400 },
-            { clue: "This type of storage device uses a PCIe interface for extremely high-speed data transfer.", answer: "What is an NVMe drive?", points: 500 }
-        ],
-        "Power & Cooling": [
-            { clue: "This component converts AC power from a wall outlet to DC power for all the computer's components.", answer: "What is a Power Supply Unit, or PSU?", points: 100 },
-            { clue: "This component is typically installed on the CPU to prevent it from overheating.", answer: "What is a heat sink and fan or an AIO liquid cooler?", points: 200 },
-            { clue: "This thermal compound is applied between the CPU and its cooler to improve heat transfer.", answer: "What is thermal paste?", points: 300 },
-            { clue: "When an air cooling system fails, what is the most likely result?", answer: "What is that the system will overheat and shut down?", points: 400 },
-            { clue: "What is the primary function of a Power Supply Unit?", answer: "What is to provide stable power to a computer's components?", points: 500 }
-        ],
-        "Expansion & Peripherals": [
-            { clue: "These slots on a motherboard are used to add functionality like a graphics card or a network card.", answer: "What are expansion slots?", points: 100 },
-            { clue: "This is the most common type of expansion slot in modern motherboards.", answer: "What is a PCIe slot?", points: 200 },
-            { clue: "This type of expansion card is necessary for a computer that does not have a processor with integrated graphics.", answer: "What is a graphics card?", points: 300 },
-            { clue: "What are two things that a graphics card is responsible for?", answer: "What is processing images and providing a video output to a display?", points: 400 },
-            { clue: "What is the most common use for a network expansion card?", answer: "What is adding a wired or wireless network connection to a desktop computer?", points: 500 }
+        "Network Performance": [
+            { clue: "This term describes the maximum rate at which data can be transferred across a network.", answer: "What is bandwidth?", points: 100 },
+            { clue: "This term refers to the delay before data begins to transfer.", answer: "What is latency?", points: 200 },
+            { clue: "This occurs when data packets fail to reach their destination.", answer: "What is packet loss?", points: 300 },
+            { clue: "This term refers to the variations in latency that can cause disruptions in audio or video streams.", answer: "What is jitter?", points: 400 },
+            { clue: "Name two common issues that can limit the speed and efficiency of network transmission.", answer: "What are cable quality/length, network congestion, interference, or ISP throttling?", points: 500 }
         ]
     }
+    // Add other modules here
 };
 
-const finalJeopardyQuestion = {
-    category: "Final Jeopardy: All About Technology",
-    clue: "This person is the co-founder of Apple Inc.",
-    answer: "Who is Steve Jobs?"
-};
+const board = document.getElementById('jeopardy-board');
+const modal = document.getElementById('modal');
+const clueContent = document.getElementById('clue-content');
+const revealAnswerBtn = document.getElementById('reveal-answer-btn');
+const answerKey = document.getElementById('answer-key');
+const scoreControls = document.getElementById('scoring-controls');
+const scoreDisplays = [
+    document.getElementById('score-1'),
+    document.getElementById('score-2'),
+    document.getElementById('score-3')
+];
+const moduleMenu = document.getElementById('module-menu');
+const dropdownBtn = document.getElementById('dropdown-btn');
+
+let currentClue;
+let currentPoints;
+let currentPlayerScores = [0, 0, 0];
+let currentModuleKey = "mod 1";
+
+// Function to generate the game board for a specific module
+function createBoard(moduleKey) {
+    board.innerHTML = '';
+    const currentModuleData = gameData[moduleKey];
+    currentModuleKey = moduleKey;
+    const moduleIndex = parseInt(moduleKey.split(' ')[1]) - 1;
+    dropdownBtn.textContent = moduleNames[moduleIndex];
+
+    if (!currentModuleData) {
+        board.innerHTML = '<p style="font-size: 1.5rem; text-align: center; color: #ffd700;">Content for this module is not yet available. Check back soon!</p>';
+        return;
+    }
+
+    const categories = Object.values(currentModuleData);
+    const categoryTitles = Object.keys(currentModuleData);
+    const numClues = categories[0].length;
+
+    categoryTitles.forEach(title => {
+        const categoryTitle = document.createElement('div');
+        categoryTitle.classList.add('category-title');
+        categoryTitle.textContent = title;
+        board.appendChild(categoryTitle);
+    });
+
+    for (let i = 0; i < numClues; i++) {
+        for (let j = 0; j < categories.length; j++) {
+            const clue = categories[j][i];
+            const clueCard = document.createElement('div');
+            clueCard.classList.add('clue-card');
+            clueCard.textContent = clue.points;
+            clueCard.dataset.category = j;
+            clueCard.dataset.clueIndex = i;
+            clueCard.addEventListener('click', () => showClue(clue, clueCard));
+            board.appendChild(clueCard);
+        }
+    }
+}
+
+// Function to generate the dropdown menu links
+function createDropdownLinks() {
+    moduleNames.forEach((name, index) => {
+        const a = document.createElement('a');
+        const moduleKey = `mod ${index + 1}`;
+        a.href = "#";
+        a.textContent = name;
+        a.dataset.module = moduleKey;
+
+        // Make the link clickable only if content exists in gameData
+        if (gameData[moduleKey]) {
+            a.classList.add('clickable');
+            a.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelectorAll('.dropdown-content a').forEach(link => link.classList.remove('active'));
+                a.classList.add('active');
+                createBoard(moduleKey);
+                moduleMenu.style.display = 'none'; // Hide the menu after selection
+            });
+        }
+        
+        moduleMenu.appendChild(a);
+    });
+}
+
+// Toggle the dropdown menu visibility
+dropdownBtn.addEventListener('click', () => {
+    moduleMenu.style.display = moduleMenu.style.display === 'block' ? 'none' : 'block';
+});
+
+// Close the dropdown if the user clicks outside of it
+window.addEventListener('click', (e) => {
+    if (!e.target.matches('#dropdown-btn') && !e.target.closest('.dropdown-content')) {
+        if (moduleMenu.style.display === 'block') {
+            moduleMenu.style.display = 'none';
+        }
+    }
+});
+
+// Function to show the clue in the modal
+function showClue(clue, cardElement) {
+    currentClue = clue;
+    currentPoints = clue.points;
+    clueContent.textContent = clue.clue;
+    answerKey.textContent = clue.answer;
+
+    modal.style.display = 'block';
+
+    // Disable the card after it's clicked
+    cardElement.classList.add('disabled');
+
+    // Reset modal state
+    revealAnswerBtn.style.display = 'block';
+    answerKey.style.display = 'none';
+    scoreControls.style.display = 'none';
+}
+
+// Function to handle revealing the answer
+revealAnswerBtn.addEventListener('click', () => {
+    answerKey.style.display = 'block';
+    revealAnswerBtn.style.display = 'none';
+    scoreControls.style.display = 'block';
+});
+
+// Event listeners for Correct/Incorrect buttons
+document.querySelectorAll('.correct-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const playerIndex = parseInt(button.dataset.player) - 1;
+        currentPlayerScores[playerIndex] += currentPoints;
+        updateScores();
+    });
+});
+
+document.querySelectorAll('.incorrect-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const playerIndex = parseInt(button.dataset.player) - 1;
+        currentPlayerScores[playerIndex] -= currentPoints;
+        updateScores();
+    });
+});
+
+// Function to update score display on the board
+function updateScores() {
+    scoreDisplays.forEach((display, index) => {
+        display.textContent = currentPlayerScores[index];
+    });
+}
+
+// Close modal when close button is clicked
+document.querySelector('.close-button').addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+// Close modal when clicking outside of it
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    createDropdownLinks();
+    createBoard("mod 1"); // Load the first module board by default
+});
